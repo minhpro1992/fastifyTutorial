@@ -1,0 +1,21 @@
+### Get list user
+GET http://localhost:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZXN0IjoiMTIzNDU2IiwiaWF0IjoxNzA4Njc3MjE5fQ.8Nc6Q2DPVwomtCdv68r4arHKrFjVl7CXA_bpPwKqKSg
+
+### Create user
+POST http://localhost:3000/users/create
+Content-Type: application/json
+
+{
+    "username": "User 1",
+    "password": "Password 1",
+    "email": "Email1@test.com"
+}
+
+### Sign up
+GET http://localhost:3000/signup
+
+
+### Protected end point
+GET http://localhost:3000/protected
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZXN0IjoiMTIzNDU2IiwiaWF0IjoxNzA4Njc3MjE5fQ.8Nc6Q2DPVwomtCdv68r4arHKrFjVl7CXA_bpPwKqKSg

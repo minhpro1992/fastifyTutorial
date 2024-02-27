@@ -1,0 +1,32 @@
+{
+  "name": "fastify-tutorial",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Minh Nguyen",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsnd --respawn --transpile-only --exit-child src/app.ts",
+    "test": "tap --node-arg=--require=ts-node/register"
+  },
+  "dependencies": {
+    "@fastify/basic-auth": "^5.1.1",
+    "@fastify/jwt": "^8.0.0",
+    "@fastify/swagger": "^8.14.0",
+    "@prisma/client": "^5.9.1",
+    "dotenv": "^16.4.5",
+    "fastify": "^4.26.1",
+    "fastify-jwt": "^4.2.0",
+    "fastify-plugin": "^4.5.1",
+    "fastify-swagger": "^5.2.0",
+    "fastify-zod": "^1.4.0",
+    "tap": "^16.0.0",
+    "zod": "^3.22.4",
+    "zod-to-json-schema": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.19",
+    "@types/tap": "^15.0.6",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3"
+  }
+}
